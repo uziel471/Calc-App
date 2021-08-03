@@ -1,12 +1,16 @@
 import React from 'react';
+import PorpTypes from 'prop-types';
 
-const Result=(props)=>{
-    console.log(props);
-    return(
-        <div className="result">
-            <span>{props.value}</span>
-        </div>
-    )
+const Result=({value })=>(
+    <div className="result">
+        <span>{value}</span>
+    </div>
+)
+
+Result.propTypes ={
+    value:PorpTypes.string.isRequired
 }
-
+Result.defaultProps={
+    value:"0"
+}
 export default Result;
