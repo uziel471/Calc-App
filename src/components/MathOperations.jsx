@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button/index';
-
 const MathOperations=({onClickOperation, onClickEqual})=>{
     return(
         <section className="math-operations">
